@@ -7,8 +7,17 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
   }
 
-  .logo {
+  .igniteLogo {
     height: 1.875rem;
+  }
+
+  .pomodoroLogo {
+    height: 2rem;
+  }
+
+  .pomoroTitle {
+    gap: 0.8rem;
+    color: ${(props) => props.theme['gray-100']};
   }
 
   .icon {
