@@ -7,11 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
- /*  :focus {
-    outline: none;
-    box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
-  } */
-
   body {
     background: ${(props) => props.theme['gray-900']};
     color: ${(props) => props.theme['gray-300']};
@@ -32,5 +27,22 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    html  {
+      height: 100vh;
+      font-size: 70%;
+      margin: auto 10px;
+    }
+
+    form {
+      width: 90%;
+    }
+
+    span, .jXaXdV {
+      font-size: 5rem;
+      line-height: 5rem;
+   }
   }
 `

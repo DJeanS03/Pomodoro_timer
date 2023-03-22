@@ -1,4 +1,11 @@
-import { createContext, ReactNode, useState, useReducer } from 'react'
+import { differenceInSeconds } from 'date-fns'
+import {
+  createContext,
+  ReactNode,
+  useState,
+  useReducer,
+  useEffect,
+} from 'react'
 import {
   addNewCycleAction,
   interruptCurrentCycleAction,
@@ -38,13 +45,36 @@ export function CyclesContextProvider({
       cycles: [],
       activeCycleId: null,
     },
+    (initialState) => {
+      const storedStateAsJSON = localStorage.getItem(
+        '@pomodoro-timer:cycles-state-v1.0.0',
+      )
+      if (storedStateAsJSON) {
+        return JSON.parse(storedStateAsJSON)
+      }
+
+      return initialState
+    },
   )
 
-  const [amountSecondsPassed, setAmountSecondsPassed] = useState(0) // o tando de segundos que se passaram após o ciclo ser ativo
-
   const { cycles, activeCycleId } = cyclesState
-
   const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId) // pecorre o vetor de ciclos e encontra um ciclo que seu id seja igual o id do ciclo ativo
+
+  const [amountSecondsPassed, setAmountSecondsPassed] = useState(() => {
+    // o tando de segundos que se passaram após o ciclo ser ativo
+    if (activeCycle) {
+      return differenceInSeconds(new Date(), new Date(activeCycle.startDate))
+    }
+
+    return 0
+  })
+
+  useEffect(() => {
+    // salva os ciclos anteriores no localStorage
+    const stateJson = JSON.stringify(cyclesState)
+
+    localStorage.setItem('@pomodoro-timer:cycles-state-v1.0.0', stateJson)
+  }, [cyclesState])
 
   function markCurrentCycleAsFinished() {
     dispatch(markCurrentCycleAsFinishedAction())

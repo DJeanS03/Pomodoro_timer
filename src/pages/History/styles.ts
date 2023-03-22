@@ -47,7 +47,7 @@ export const HistoryList = styled.div`
     padding: 1rem;
 
     &:first-child {
-      width: 50%;
+      width: 30%;
       padding-left: 1.5rem;
     }
 
@@ -66,7 +66,7 @@ interface StatusProps {
   statusColor: keyof typeof STATUS_COLORS
 }
 
-export const Status = styled.span<StatusProps>`
+export const Status = styled.label<StatusProps>`
   display: flex;
   align-items: center;
   gap: 0.5rem;

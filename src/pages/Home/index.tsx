@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-import { useForm, FormProvider } from 'react-hook-form'
+import { FormProvider, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as zod from 'zod'
-=======
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as zod from 'zod';
-import { differenceInSeconds } from 'date-fns';
 
->>>>>>> 0c09aac306584760c637d017402d12bea3ac438c
 import {
   HomeContainer,
   StartCountdownButton,
   StopCountdownButton,
 } from './styles'
+
 import { useContext } from 'react'
 import { NewCycleForm } from './NewCycleForm'
 import { Countdown } from './Countdown'
