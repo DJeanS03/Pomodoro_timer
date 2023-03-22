@@ -2,8 +2,6 @@
     Pomodoro Timer
 </h1>
 
----
-
 Pomodoro é uma técnica que consiste na utilização de um cronômetro para dividir trabalhos em períodos, separados por breves intervalo ajudando quem tem dificuldade em terminar as suas tarefas no prazo garantido.
 
 O `Pomodoro Timer` é que um projeto que permite ao usuário cronometrar as suas tarefas no dia a dia, além de permitir ver um histórico de todos as tarefas já realizadas.
