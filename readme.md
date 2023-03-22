@@ -1,6 +1,7 @@
-<h1 aling='center'>
-    Pomodoro Timer
+<h1 align="center">
+    Ignite Timer
 </h1>
+
 
 Pomodoro é uma técnica que consiste na utilização de um cronômetro para dividir trabalhos em períodos, separados por breves intervalo ajudando quem tem dificuldade em terminar as suas tarefas no prazo garantido.
 
