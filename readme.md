@@ -9,7 +9,7 @@ O `Pomodoro Timer` é que um projeto que permite ao usuário cronometrar as suas
 
 
 
-**Objetivos**: os principais objetivos desta aplicação foi treinar a atilização das seguintes ferramentas/tecnologias: 
+**Objetivos**: os principais objetivos desta aplicação foi treinar a utilização das seguintes ferramentas/tecnologias: 
   - Lidar com datas e horarios através da biblioteca `date-fns`
   - Utilização de formulários com `React Hook Form`
   - Aplicação de temas dark e light utilizando o `Styled Components`
