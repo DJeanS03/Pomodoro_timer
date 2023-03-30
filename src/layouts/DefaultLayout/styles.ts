@@ -9,7 +9,7 @@ export const LayoutContainer = styled.div`
   margin: 4rem auto;
   padding: 2.5rem;
 
-  background: ${(props) => props.theme['gray-800']};
+  background: ${(props) => props.theme['shape-primary']};
   border-radius: 8px;
   display: flex;
   flex-direction: column;
