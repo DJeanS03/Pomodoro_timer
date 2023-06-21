@@ -1,7 +1,9 @@
 <h1 align="center">
     Pomodoro Timer
 </h1>
-
+<p align="center">
+    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/images/Cover.png" />
+</p>
 
 O Pomodoro Timer é um projeto que tem como objetivo permitir aos usuários cronometrar suas tarefas diárias, além de fornecer um histórico completo de todas as tarefas já realizadas.
 
@@ -15,9 +17,6 @@ Principais Objetivos:
 Se você gostou do projeto, não se esqueça de dar uma estrela ⭐ e compartilhá-lo para me ajudar. Além disso, siga-me para acompanhar outros projetos que desenvolvo.
 
 ## 📷 Demonstration
-<p align="center">
-    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/images/Cover.png" />
-</p>
 <p align="center">
     <img
         alt="Gif de demonstração do projeto" 
