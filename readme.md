@@ -1,5 +1,5 @@
 <h1 align="center">
-    # Pomodoro Timer
+    Pomodoro Timer
 </h1>
 
 
