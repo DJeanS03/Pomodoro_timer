@@ -16,7 +16,7 @@ Se você gostou do projeto, não se esqueça de dar uma estrela ⭐ e compartilh
 
 ## 📷 Demonstration
 <p align="center">
-    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/images/cover.png" />
+    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/images/Cover.png" />
 </p>
 <p align="center">
     <img
