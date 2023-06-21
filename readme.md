@@ -1,7 +1,9 @@
 <h1 align="center">
     Pomodoro Timer
 </h1>
-
+<p align="center">
+    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/images/Cover.png" />
+</p>
 
 O Pomodoro Timer é um projeto que tem como objetivo permitir aos usuários cronometrar suas tarefas diárias, além de fornecer um histórico completo de todas as tarefas já realizadas.
 
@@ -15,9 +17,6 @@ Principais Objetivos:
 Se você gostou do projeto, não se esqueça de dar uma estrela ⭐ e compartilhá-lo para me ajudar. Além disso, siga-me para acompanhar outros projetos que desenvolvo.
 
 ## 📷 Demonstration
-<p align="center">
-    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/images/Cover.png" />
-</p>
 <p align="center">
     <img
         alt="Gif de demonstração do projeto" 
@@ -77,10 +76,10 @@ Segue os comandos para baixar e executar o projeto na sua máquina:
     Made by DJeanS03
 </p>
 <p align="left">
-    <a href=https://www.linkedin.com/in/jean-victor-7bb04519a/" target="_blank">
-        <img align="center" src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Pablo Alan" />
+    <a href="https://www.linkedin.com/in/jean-victor-7bb04519a/" target="_blank">
+        <img align="center" src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Jean Victor" />
     </a>
     <a href="mailto:jeamsillva3@gmail.com" target="_blank">
-        <img align="center" src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Pablo Alan" />
+        <img align="center" src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Jean Victor" />
     </a>
 </p>
