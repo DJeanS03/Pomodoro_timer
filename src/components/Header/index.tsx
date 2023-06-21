@@ -1,4 +1,3 @@
-import './styles.ts'
 import { HeaderContainer } from './styles'
 import { NavLink } from 'react-router-dom'
 import logoignite from '../../assets/ignite-logo.svg'
