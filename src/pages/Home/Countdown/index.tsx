@@ -1,8 +1,8 @@
 import { differenceInSeconds } from 'date-fns'
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { CyclesContext } from '../../../context/CyclesContext'
-
 import { CountdownContainer, Separator } from './styles'
+import bip from '../../../assets/bip.mp3'
 
 export function Countdown() {
   const {
@@ -13,6 +13,7 @@ export function Countdown() {
     setSecondsPassed,
   } = useContext(CyclesContext)
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
+  const audioRef = useRef<HTMLAudioElement>(null) // Ref para o elemento de áudio
 
   useEffect(() => {
     let interval: number
@@ -28,8 +29,11 @@ export function Countdown() {
           markCurrentCycleAsFinished()
           setSecondsPassed(totalSeconds)
           clearInterval(interval)
+          if (audioRef.current) {
+            audioRef.current.play() // Toca o áudio quando o cronômetro chegar a 0
+          }
         } else {
-          setSecondsPassed(secondsDifference) // só atualiza os segundos passados se não completar o total de segundos
+          setSecondsPassed(secondsDifference)
         }
       }, 1000)
     }
@@ -48,10 +52,11 @@ export function Countdown() {
   //= ============================TIMER==================================
 
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
-  const minutesAmount = Math.floor(currentSeconds / 60) // arredonda o numero para baixo
+  const minutesAmount = Math.floor(currentSeconds / 60)
   const secondsAmount = currentSeconds % 60
-  const minutes = String(minutesAmount).padStart(2, '0') // se ele não tiver 2 caracteres, adiciona 'zeros' na frente
+  const minutes = String(minutesAmount).padStart(2, '0')
   const seconds = String(secondsAmount).padStart(2, '0')
+
   //= ===================================================================
 
   //= ============================PAGE TITLE==============================
@@ -62,6 +67,7 @@ export function Countdown() {
       document.title = 'Pomodoro Timer'
     }
   }, [minutes, seconds, activeCycle])
+
   //= ====================================================================
 
   return (
@@ -71,6 +77,7 @@ export function Countdown() {
       <Separator>:</Separator>
       <span> {seconds[0]}</span>
       <span>{seconds[1]}</span>
+      <audio ref={audioRef} src={bip} />
     </CountdownContainer>
   )
 }
